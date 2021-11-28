@@ -1,0 +1,350 @@
+/* || ===
+
+= IMKAN.com.sa
+= FOOTER
+
+=== || */
+.sup
+{
+    position: relative;
+    z-index: 1;
+    background-color: #20242b;
+    @media screen and (max-width: $tablet)
+    {
+      padding: 10px;
+    }
+    .txt
+    {
+        padding-bottom: 45px;
+        padding-top: 45px;
+        @media screen and (max-width: $tablet)
+        {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            float: right;
+        }
+
+        span
+        {
+            font-size: $lr-xm-fontsize - 2px;
+            color: $c-white;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $lr-sm-fontsize - 2px;
+            }
+
+        }
+
+    }
+    .form-wrapper
+    {
+        display: block;
+        float: left;
+        margin-top: 30px;
+        overflow: hidden;
+        border-radius: 60px;
+        background-color: #fff;
+        padding-right: 30px;
+        padding-left: 0px;
+        width: 400px;
+        height: 60px;
+        @media screen and (max-width: $tablet)
+        {
+            float: right;
+            margin-bottom: 20px;
+            margin-top: 0px;
+            width: 100%;
+            height: 50px;
+        }
+
+
+        .text
+        {
+            direction: rtl;
+            padding-right: 20px;
+            position: relative;
+            font-size: $md-sm-fontsize;
+            color: $c-mgray;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $sm-fontsize;
+                height: 40px;
+            }
+            }
+            input
+            {
+                height: 60px;
+                @media screen and (max-width: $tablet)
+                {
+                    height: 50px;
+                }
+
+            }
+            button
+            {
+
+                color: $c-white;
+                background-color: $c-brand2;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 8px;
+                padding-bottom: 60px;
+                font-size: $md-sm-fontsize;
+                float: left;
+                -webkit-transition: background-color 0.2s ease-out;
+                -moz-transition: background-color 0.2s ease-out;
+                -o-transition: background-color 0.2s ease-out;
+                transition: background-color 0.2s ease-out;
+                &:hover
+                {
+                    background-color: #49b7af;
+                }
+                @media screen and (max-width: $tablet)
+                {
+                    font-size: $sm-fontsize;
+                    padding-top: 0px;
+                }
+
+
+            }
+
+
+    }
+}
+.footer
+{
+    position: relative;
+    z-index: 1;
+    background-color: #232730;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    @media screen and (max-width: $tablet)
+    {
+        padding-top: $lr-whitespace - 15px;
+        padding-bottom: $lr-whitespace - 15px;
+    }
+    .prices
+    {
+        h4
+        {
+            color: $c-white;
+            font-size: $lr-xm-fontsize + 2px;
+            margin-bottom: 35px;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $lr-sm-fontsize + 2px;
+                margin-bottom: 20px;
+            }
+        }
+        ul
+        {
+            list-style: none;
+            margin-right: 0px;
+            padding-right: 0px;
+            li
+            {
+
+                padding-bottom: 15px;
+                @media screen and (max-width: $tablet)
+                {
+                    padding-bottom: 10px;
+                }
+                a
+                {
+                    text-decoration: none;
+                    font-size:  $lr-xs-fontsize;
+                    font-family: 'Helvetica';
+                    color: $c-mgray;
+                    @media screen and (max-width: $tablet)
+                    {
+                        font-size: $xs-fontsize;
+                    }
+                    &:hover
+                    {
+                        color: $c-white;
+                    }
+
+                }
+            }
+        }
+    }
+    .prices-serv
+    {
+      h4
+        {
+            color: $c-white;
+            font-size: $lr-xm-fontsize + 2px;
+            margin-bottom: 35px;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $lr-sm-fontsize + 2px;
+                 margin-bottom: 20px;
+            }
+        }
+        ul
+        {
+            margin-right: 0px;
+            padding-right: 0px;
+            list-style: none;
+            li
+            {
+                 padding-bottom: 15px;
+                 @media screen and (max-width: $tablet)
+                {
+                    padding-bottom: 10px;
+                }
+                a
+                {
+                    text-decoration: none;
+                    font-size:  $lr-xs-fontsize;
+                    font-family: 'Helvetica';
+                    color: $c-mgray;
+                     @media screen and (max-width: $tablet)
+                    {
+                        font-size: $xs-fontsize;
+
+                    }
+                    &:hover
+                    {
+                        color: $c-white;
+                    }
+                }
+            }
+        }
+    }
+    .call-serv
+    {
+        h4
+        {
+            color: $c-white;
+            font-size: $lr-xm-fontsize + 2px;
+            margin-bottom: 35px;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $lr-sm-fontsize + 2px;
+                 margin-bottom: 20px;
+            }
+        }
+        ul
+        {
+            list-style: none;
+            margin-right: 0px;
+            padding-right: 0px;
+            li
+            {
+                 padding-bottom: 15px;
+                 @media screen and (max-width: $tablet)
+                {
+                    padding-bottom: 10px;
+                }
+
+                a
+                {
+                    text-decoration: none;
+                    font-size:  $lr-xs-fontsize;
+                    // font-family: 'Helvetica';
+                    color: $c-mgray;
+                    padding-bottom: 30px;
+                    @media screen and (max-width: $tablet)
+                    {
+                        font-size: $xs-fontsize;
+                    }
+                    &:hover
+                    {
+                        color: $c-white;
+                    }
+                }
+            }
+        }
+    }
+    .contact
+    {
+        display: block;
+        float: left;
+        @media screen and (max-width: $tablet)
+        {
+            float: right;
+        }
+
+        h4
+        {
+            color: $c-white;
+            font-size: $lr-xm-fontsize + 2px;
+            margin-bottom: 30px;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $lr-sm-fontsize + 2px;
+                 margin-bottom: 20px;
+            }
+        }
+        ul
+        {
+            list-style: none;
+            margin-right: 0px;
+            padding-right: 0px;
+            li
+            {
+                a
+                {
+                    width: 45px;
+                    height: 45px;
+                    text-decoration: none;
+                    font-size: $xs-fontsize;
+                    color: $c-white;
+                    float: right;
+                    // padding: 20px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 47px;
+                    margin-left: 20px;
+                    @include transition;
+                    background: #20242b;
+                    border: 2px solid transparent;
+                    &:hover{
+                      border: 2px solid $c-white;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}
+
+    .made
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #232730;
+        border-top: 1px solid #20242b;
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: $tablet)
+        {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        img
+        {
+            width:auto!important;            
+            margin: 0 10px 0 0;
+            position: relative;
+            top: -3px;
+            @media screen and (max-width: $tablet)
+            {
+               height: auto;
+               width: 60;
+            }
+        }
+        span
+        {
+            font-size: $md-md-fontsize;
+            color: $c-white;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $sm-fontsize;
+
+            }
+        }
+    }

@@ -1,0 +1,1366 @@
+/* || ===
+
+= IMKAN.com.sa
+= HEADER
+
+=== || */
+/**
+ // background for default blue in header
+      background: $c-brand;
+
+      // background gradient for dark blue
+      background-image: -moz-linear-gradient( 90deg, rgb(72,135,148) 0%, rgb(31,78,155) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(72,135,148) 0%, rgb(31,78,155) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(72,135,148) 0%, rgb(31,78,155) 100%);
+
+
+      // Gradient for Pink color
+      background-image: -moz-linear-gradient( 90deg, rgb(239,94,162) 0%, rgb(168,66,152) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(239,94,162) 0%, rgb(168,66,152) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(239,94,162) 0%, rgb(168,66,152) 100%);
+**/
+
+.sub-page{
+  .header{
+
+    &:before{
+      content: '';
+      position: absolute;
+      height: 100%;
+
+
+
+      width: 100%;
+    }
+
+    .about-logo{
+      text-align: center;
+      overflow: hidden;
+      width: 100%;
+      z-index: 9;
+    }
+    .curve-image{
+      position: absolute;
+      bottom: 0;
+    }
+    .slide-about{
+      overflow: hidden;
+      float: right;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $tablet)
+  {
+
+    .logo-image{
+      float: right;
+      width: 100%;
+      display: block;
+      height: 100px;
+      overflow: hidden;
+    }
+
+  }
+
+
+}
+.header
+{
+
+    background-image: -moz--webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgba(89,194,195,0.1) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgba(89,194,195,0.1) 100%);
+    background-image: -ms--webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgba(89,194,195,0.1) 100%);
+    position: relative;
+   .nav-bg
+    {
+        width: 50%;
+        height: 125px;
+        position: absolute;
+        background-color: $c-white;
+        left: 0px;
+        margin-top: $lr-whitespace + 10px;
+        @media screen and (max-width: $tablet)
+        {
+            display: none;
+        }
+    }
+
+    .bg-img
+    {
+        display: block;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 0;
+    }
+    .logo
+    {
+        display: block;
+        position: absolute;
+        float: right;
+        @media screen and (max-width: $tablet)
+        {
+
+            width:50%;
+
+        }
+        img
+        {
+            width: auto;
+            margin-top: $lr-whitespace + 15px;
+            @media screen and (max-width: $tablet)
+            {
+                height: auto;
+                width: $lr-whitespace + 40px;
+                margin-top: $md-whitespace * 1.5;
+            }
+        }
+    }
+    .burger-icon
+    {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 50%;
+        margin-top: $lr-whitespace;
+        cursor: pointer;
+        i
+        {
+            font-size: 20px;
+            color: $c-white;
+            float: left;
+        }
+        @media screen and (max-width: $tablet)
+        {
+            display: block;
+        }
+    }
+    .respon-menu
+    {
+
+        display: none;
+        max-height: 0px;
+        overflow: hidden;
+        @media screen and (max-width: $tablet)
+        {
+            display: block;
+            width: 100%;
+        }
+        .mob-links
+        {
+
+            list-style: none;
+            margin-top: 130px;
+            width: calc(100% - 30px);
+            background-color: $c-ofwhite;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            z-index: 9999999;
+            li
+            {
+
+                padding-bottom: 30px;
+                ul
+                {
+                    float: none;
+                    list-style: none;
+                    display: none;
+                    li
+                    {
+                        float: none;
+                        margin-right: 0px;
+
+                        a
+                        {
+                            display:block;
+                            color:#333;
+                            text-decoration:none;
+                            font-size:16px;
+                            padding-bottom:0px;
+                            margin-bottom: 0px!important;
+
+                        }
+                    }
+
+                }
+
+                a
+                {
+
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-family: 'Helvetica';
+                    color: $c-mgray;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    &:hover
+                    {
+                        color: $c-dgray;
+                        border-bottom: 3px solid $c-dgray;
+                        cursor: pointer;
+                    }
+
+                }
+                i
+                {
+                    margin-right:10px;
+                    font-size: 6px;
+                    color: $c-mgray;
+                }
+
+            }
+            .cont-btn
+            {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 20px;
+                padding-left: 20px;
+                background-color: $c-brand;
+                color: $c-white;
+                border-radius: 60px;
+                font-size: $md-sm-fontsize;
+                cursor: pointer;
+                &:hover
+                {
+                background-color: #d74b8c;
+                }
+            }
+
+
+        }
+
+    }
+    .respon-menu.active
+    {
+        max-height: 1000px;
+        overflow: visible;
+        display: block;
+        .mob-links{
+          position: absolute;
+        }
+    }
+    .nav-bar
+    {
+
+        .links
+        {
+          box-shadow: 8px 5px 15px 0px rgba(35, 39, 48, 0.01);
+            display: block;
+            float: left;
+            list-style: none;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-top: $lr-whitespace + 10px;
+            left: 0px;
+            border-radius: 100px;
+            cursor: pointer;
+            background-color: $c-white;
+            position: relative;
+            z-index: 1;
+            @media screen and (max-width: $tablet)
+            {
+                display: none;
+            }
+
+
+
+            li
+            {
+                cursor: pointer;
+                &:hover > ul
+                {
+                display: block;
+                }
+                ul
+                {
+                    float: none;
+                    list-style: none;
+
+                    background-color: $c-white;
+                    margin: 0px;
+                    border-radius: 0px;
+                    position: absolute;
+                    margin-top: 50px;
+                    display: none;
+                    padding:0;
+
+                    li
+                    {
+                        float: none;
+                        margin-right: 0px;
+                        a
+                        {
+                            display:block;
+                            color: $c-black;
+                            text-decoration:none;
+                            font-weight:700;
+                            font-size:$lr-xs-fontsize;
+                            line-height:32px;
+                            padding-bottom:0px;
+                            padding-bottom: 0px;
+                            padding: $sm-whitespace $md-whitespace;
+                            border-bottom: 2px solid #f5f5f5 !important;
+                            &:hover
+                            {
+                                border-bottom: 0px;
+                                color: $c-brand;
+                            }
+                        }
+                    }
+                }
+                float: right;
+                margin-right: $md-whitespace +10px;
+                @media screen and (max-width: $desktop)
+                {
+                    margin-right: $md-whitespace - 5px;
+
+                }
+                a
+                {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-family: 'Helvetica';
+                    color: $c-mgray;
+                    padding-bottom: 50px;
+                    cursor: pointer;
+                    &:hover
+                    {
+                    border-bottom: 3px solid $c-mgray;
+                    }
+
+                }
+                i
+                {
+                    margin-right:10px;
+                    font-size: 8px;
+                    color: $c-mgray;
+                }
+
+
+            }
+            .cont-btn
+            {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 40px;
+                padding-left: 40px;
+                background-color: $c-brand;
+                color: $c-white;
+                border-radius: 60px;
+                margin-right: 30px;
+                font-size: $lr-sm-fontsize;
+                cursor: pointer;
+                -webkit-transition: background-color 0.2s ease-out;
+                -moz-transition: background-color 0.2s ease-out;
+                -o-transition: background-color 0.2s ease-out;
+                transition: background-color 0.2s ease-out;
+                &:hover
+                {
+                    background-color: #d74b8c;
+                }
+
+            }
+        }
+
+
+    }
+    .slide
+    {
+        .car
+        {
+            float: left;
+            margin-top:165px;
+            @media screen and (max-width: $tablet)
+            {
+                margin-top: $lr-whitespace;
+                text-align: center;
+                margin-top: 30px;
+            }
+            img
+            {
+                width: auto;
+                @media screen and (max-width: $tablet)
+                {
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                    margin-top: 100px;
+                    margin-bottom: 30px;
+                }
+                @media screen and (max-width: $desktop)
+                {
+                    width: 90%;
+                    height: auto;
+
+                }
+            }
+        }
+        .slide-txt
+        {
+            margin-top: 250px;
+            h2
+            {
+                font-size: $lr-xl-fontsize - 5px;
+                color: $c-dgray;
+                @media screen and (max-width: $tablet)
+                {
+                   font-size: $lr-fontsize;
+                   margin-top: 10px;
+                   margin-bottom: 20px;
+
+                }
+            }
+            h1
+            {
+                font-size: $lr-xl-fontsize + 20px;
+                @media screen and (max-width: $tablet)
+                {
+                    font-size: $xl-fontsize;
+
+                }
+                span
+                {
+                    color: $c-brand!important;
+                    margin-right: 15px;
+                }
+            }
+            p
+            {
+                color: $c-mgray;
+                font-size: 18px;
+                line-height: 1.7;
+                margin-bottom: 50px;
+                margin-top: $lr-whitespace - 10px;
+                @media screen and (max-width: $tablet)
+                {
+                    font-size: $sm-fontsize;
+                    margin-top: $md-whitespace;
+                    margin-bottom:  $md-whitespace;
+                }
+            }
+            a
+            {
+                font-size: $lr-sm-fontsize;
+                color: $c-dgray;
+                padding-bottom: $sm-whitespace;
+                border-bottom: 3px solid ;
+                margin-top: 45px;
+                @include transition;
+                &:hover{
+                  color: $c-brand;
+                  i{
+                    @include transition;
+                    margin-right: $md-whitespace*1.5;
+                  }
+                }
+                @media screen and (max-width: $tablet)
+                {
+                    font-size: $sm-fontsize;
+                    border-bottom: 2px solid $c-mgray;
+                }
+            }
+            i
+            {
+                margin-right: $md-whitespace;
+                font-size: 13px;
+                @media screen and (max-width: $tablet)
+                {
+                    font-size: $xs-fontsize;
+
+                }
+
+            }
+        }
+    }
+
+    .slide-about
+    {
+        .about-title
+        {
+            float: right;
+            margin: 100px 0;
+            width: 100%;
+            text-align: center;
+            @media screen and (max-width: $tablet)
+            {
+
+                margin:30px 0 0px;
+
+            }
+            span
+            {
+                color: $c-white;
+                font-size: $xl-fontsize;
+                margin-bottom: $sm-whitespace + 5px;
+                @media screen and (max-width: $tablet)
+                {
+                    color: $c-white;
+                    font-size: $md-fontsize;
+                }
+
+
+            }
+            h3
+            {
+                color:  $c-white;
+                font-size: $lr-xl-fontsize;
+                @media screen and (max-width: $tablet)
+                {
+                    color: $c-white;
+                    font-size: $lr-lr-fontsize;
+                }
+            }
+        }
+        .about-logo
+        {
+            text-align: center;
+
+            @media screen and (max-width: $tablet)
+            {
+                padding-top: 50px;
+                margin-right: 0;
+                text-align: center;
+                margin-top: 0px;
+
+
+            }
+
+
+            img
+            {
+                width: auto;
+                position: relative;
+                text-align: center;
+                @media screen and (max-width: $tablet)
+                {
+                    width: 50%;
+                    height: auto;
+                    text-align: center;
+                }
+
+            }
+        }
+
+    }
+}
+/** Start air plane book **/
+.slide-air
+{
+    float: right;
+    width: 100%;
+    margin: 100px 0;
+    .booking
+    {    
+        .text
+        {
+            margin-bottom: $md-whitespace + 15px; 
+            @media screen and (max-width: $tablet)
+            {    
+                margin-bottom: $md-whitespace;
+                margin-top: $sm-whitespace + 5px; 
+            }
+            h1
+            {
+                font-size: $lr-lr-fontsize + 2px;
+                color: $c-white;
+                @media screen and (max-width: $tablet)
+                {    
+                    margin-bottom: $md-whitespace;
+                    font-size: $lr-md-fontsize;
+            
+                }
+            }
+        }
+        .buttons
+        {
+            margin-bottom: $md-whitespace + 10px; 
+            ul
+            {
+                list-style: none;
+                height: 60px;
+                width: 469px;
+                padding: 0px;
+                overflow: hidden;
+                border-radius: 60px;
+                border: 2px solid $c-white;
+                @media screen and (max-width: $tablet)
+                {    
+                    width: 100%;
+                    height: 50px;
+                }
+                li
+                {
+                    display: block;
+                    float: right;
+                    border-left: 2px solid $c-white;
+                    &:last-child
+                    {
+                        border-left: none;    
+                    }
+                    a
+                    {
+                        font-size:$xm-fontsize;
+                        padding: 16px 35px 17px 34px;
+                        display: block;
+                        color: $c-white;
+                        &:hover
+                        {
+                            background-color: $c-white;
+                            color: #232730;
+                        }
+                         @media screen and (max-width: $tablet)
+                         {    
+                            padding: 15px 15px 17px 17.9px;
+                            font-size: $sm-fontsize;
+                        }
+                    }
+                }
+
+            }
+        }
+     
+    
+    }
+    .inputs
+    {
+        .input-text
+        {
+            
+            span
+            {
+                color: $c-white;
+                font-size: $xs-fontsize;
+                 @media screen and (max-width: $tablet)
+                {
+                    
+                }
+            }
+            form
+            {
+                display: block;
+                float: left;
+                margin-top: 15px;
+                overflow: hidden;
+                border-radius: 60px;
+                background-color: #fff;
+                padding-right: 30px;
+                padding-left: 0px;
+                width: 100%;
+                height: 60px;
+                @media screen and (max-width: $tablet)
+                {
+                    float: right;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 50px;
+                }
+
+
+            .text
+            {
+                direction: rtl;
+                padding-right: 20px;
+                position: relative;
+                font-size: $md-sm-fontsize;
+                color: $c-mgray;
+                @media screen and (max-width: $tablet)
+                {
+                    font-size: $sm-fontsize;
+                    height: 40px;
+                }
+            }
+                i
+                {
+                    color: $c-mgray;
+                    margin-left: 10px;
+                    font-size: $xm-fontsize - 1px;
+                     
+                }
+                input
+                {
+                    height: 60px;
+                    font-size:  $md-sm-fontsize!important;
+                    @media screen and (max-width: $tablet)
+                    {
+                        height: 50px;
+                    }
+
+                }
+               
+                a
+                {
+                    img
+                    {
+                        width: auto;
+                        float: left;
+                        padding: 24px;
+                    }
+                }
+                @media screen and (max-width: $tablet)
+                {
+
+                }
+            }
+        }
+        .data
+        {
+            .date
+            {
+                
+                span
+                {
+                    color: $c-white;
+                    font-size: $xs-fontsize;
+                     @media screen and (max-width: $tablet)
+                     {
+                         margin-bottom: 10px;
+                    }
+                }
+                img
+                {
+                    position: absolute;
+                    bottom: 24px; 
+                    width: auto;
+                    @media screen and (max-width: $tablet)
+                    {
+                        bottom: -40px;
+                    }
+                }
+                
+                form
+                    {
+                        display: block;
+                        float: left;
+                        margin-top: 15px;
+                        overflow: hidden;
+                        border-radius: 60px;
+                        background-color: $c-white;
+                        padding-right: 30px;
+                        padding-left: 0px;
+                        width: 100%;
+                        height: 60px;
+                        @media screen and (max-width: $tablet)
+                        {
+                            float: right;
+                            margin-bottom: 20px;
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 50px;
+                        }
+
+
+                        .text
+                        {
+                            direction: rtl;
+                            padding-right: 20px;
+                            position: relative;
+                            font-size: $md-sm-fontsize;
+                            color: $c-mgray;
+                            @media screen and (max-width: $tablet)
+                            {
+                                font-size: $sm-fontsize;
+                                height: 40px;
+                            }
+                        }
+                        i
+                        {
+                            color: $c-mgray;
+                            margin-left: 15px;
+                        }
+                        input
+                        {
+                            height: 60px;
+                            margin-right: 30px;
+                            font-size:  $md-sm-fontsize;
+                            @media screen and (max-width: $tablet)
+                            {
+                                height: 50px;
+                            }
+
+                        }
+
+                        a
+                        {
+                            img
+                            {
+                                width: auto;
+                                float: left;
+                                padding: 24px;
+                            }
+                        }
+                    
+                }
+                
+            }
+        }
+        .age
+        {
+            span
+            {
+                color: $c-white;
+                font-size: $xs-fontsize;
+                @media screen and (max-width: $tablet)
+                {
+                    margin-bottom: 10px;
+                }
+                
+            }
+            i
+            {
+                position: absolute;
+                bottom: 20px;
+                left: 25px;
+                z-index: 1;
+                font-size: $xxs-fontsize - 2px;    
+                @media screen and (max-width: $tablet)
+                {
+                    bottom:-45px;
+                }
+                
+            }
+            .custom-select
+            {
+                display: block;
+                float: left;
+                margin-top: 15px;
+                overflow: hidden;
+                border-radius: 60px;
+                background-color: $c-white;
+                padding-right: 20px;
+                padding-left: 20px;
+                width: 100%;
+                height: 60px;
+                font-size: $xs-fontsize;
+                position: relative;
+                cursor: pointer;    
+                select
+                {
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    -webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;
+                    font-size: $xs-fontsize;
+                    border: none;
+                    color: $c-mgray;
+                    cursor: pointer;
+                    font-family: $en-font;
+                }
+                @media screen and (max-width: $tablet)
+                {
+                    float: right;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    .btn
+    {
+        margin-top: 30px;   
+        margin-bottom: 150px;
+        padding: 0px;
+        @media screen and (max-width: $tablet)
+        {
+            margin-bottom: $sm-whitespace + 5px;   
+        }
+        a
+        {
+            padding: 10px 60px 10px 60px;
+            background-color: $c-brand2;
+            color: $c-white;
+            border-radius: 60px;
+            margin-right: 30px;
+            float: left;
+            font-size: $lr-sm-fontsize;
+            cursor: pointer;
+            display: block;
+            float: left;
+            margin-left: 0px;
+            -webkit-transition: background-color 0.2s ease-out;
+            -moz-transition: background-color 0.2s ease-out;
+            -o-transition: background-color 0.2s ease-out;
+            transition: background-color 0.2s ease-out;
+            &:hover
+            {
+                background-color: #3eb3b7;
+            }
+            @media screen and (max-width: $tablet)
+            {
+                width: 100%;
+                padding: 0px;
+                font-size: $lr-xxs-fontsize;
+                text-align: center;
+
+            }
+                
+        }
+    }
+}
+ 
+
+/** End air plane book **/
+
+/** Start Hotel Booking **/
+
+.slide-air
+{
+    .inputs
+    {
+          .date
+            {
+                span
+                {
+                    color: $c-white;
+                    font-size: $xs-fontsize;
+                    @media screen and (max-width: $tablet)
+                    {
+                         margin-bottom: 10px;
+                    }
+                }
+                    
+                
+                .form-input
+                {
+                    .calendar 
+                    {
+                        position: relative;
+                        display: block;
+                        font: 500 0.8em/30px "Open Sans";
+                        -webkit-touch-callout: none;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        cursor: default;
+                        padding: 0 0 0 57px;
+                        color: #404040;
+                        .view 
+                            {
+                                position: relative;
+                                float: left;
+                                z-index: 1000;
+                                display: block;
+                                position: absolute;
+                                background-color: #fff; 
+                                padding-left: 25px;
+                                margin-top: 10px;
+                                margin-left: 13px;
+                                right: -35px;
+                                border-radius: 10px;  
+                                -webkit-box-shadow: -2px 2px 20px -5px rgba(74,73,74,1);
+                                -moz-box-shadow: -2px 2px 20px -5px rgba(74,73,74,1);
+                                box-shadow: -2px 2px 20px -5px rgba(74,73,74,1);
+                                @media screen and (max-width: $tablet)
+                                {
+                                    right: -45px;
+                                }
+                                
+                            }
+                        .nav 
+                        {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            .btn 
+                            {
+                                position: absolute;
+                                display: block;
+                                z-index: 1;
+                                cursor: pointer;
+                                cursor: hand;
+                                width: 32px;
+                                height: 32px;
+                                line-height: 31px;
+                                top: 0;
+                                left: auto;
+                                transition: opacity .5s;
+                                border-radius: 4px;
+                                &:hover 
+                                {
+                                    color: #808080;
+                                    background: #e0e0e0;
+                                    border-color: #606060;
+                                }
+                            }
+                            .prev 
+                            {
+                                left: 0;
+                            }
+                            .prev-year 
+                            {
+                                opacity: 0;
+                                left: 32px;
+                            }
+                            &:hover .prev-year
+                            {
+                                opacity: 1;
+                            }
+                            .next-year 
+                            {
+                                opacity: 0;
+                                right: 32px !important;
+                            }
+                            &:hover .next-year 
+                            {
+                                opacity: 1;
+                            }
+                            .next 
+                            {
+                                right: 0;
+                            }
+                            
+                        }
+                        .head 
+                        {
+                            .title 
+                            {
+                                font: 300 1.2em/32px "Open Sans";
+                                position: relative;
+                                float: left;
+                                width: 100%;
+                                text-align: center;
+                            }
+                            span
+                            {
+                                cursor: pointer;
+                            }
+                        }
+                        .row 
+                        {
+                            clear: both;
+                        }
+                        
+                            
+                      }
+                      
+                    
+                
+        
+                      .calendar .row.th {
+                          font-weight: 700;
+                          text-transform: uppercase;
+                          height: 40px;
+                      }
+                      .calendar .row.th .C {
+                          border-bottom: 1px solid #c0c0c0;
+                          border-radius: 0;
+                      }
+                      .calendar .C {
+                          text-align: center;
+                          width: 40px;
+                          height: 40px;
+                          line-height: 40px;
+                          float: left;
+                          transition: background-color .05s, color .05s;
+                          border-radius: 50%;
+                      }
+                      .calendar .C.mn {
+                          cursor: pointer;
+                          cursor: hand;
+                      }
+                      .calendar .C.mn:hover {
+                          background: #565656;
+                          color: white;
+                      }
+                      .calendar .C.g {
+                          color: #a0a0a0;
+                          font-weight: 300;
+                      }
+                      .calendar .C.slctd {
+                          background: #202020;
+                          color: white;
+                          font-size: 1.15em;
+                          font-weight: 300;
+                      }
+                      .calendar .C.today {
+                          font-weight: 900;
+                          font-size: 1.3em;
+                      }
+
+                      .calendar .selected {
+                          margin: 0 0 0 64px;
+                          float: right;
+                          text-align: center;
+                          width: 280px;
+                      }
+                      .calendar .selected .desc {
+                          border-bottom: 1px solid #c0c0c0;
+                      }
+
+                      .calendar .selected .val {
+                          padding: 0 8px;
+                          background: #f0f0f0;
+                          color: #808080;
+                      }
+
+
+                      .calendar .dayArea {
+                          position: relative;
+                          width: 280px;
+                          height: 240px;
+                          overflow: hidden;
+                      }
+                      .calendar .dayArea .mArea {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                      }
+                    i
+                    {
+                        position: absolute;
+                        line-height: 3.6;
+                        font-size: $xm-fontsize;
+                        color: #999ea9!important;
+                        @media screen and (max-width: $tablet)
+                        {
+                            line-height: 4;
+                            font-size: $xs-fontsize;
+                        }
+                    }
+                 
+                        
+                        margin-top: 15px;
+                        border-radius: 60px;
+                        background-color: $c-white;
+                        padding-right: 30px;
+                        padding-left: 0px;
+                        width: 100%;
+                        height: 60px;
+                        @media screen and (max-width: $tablet)
+                        {
+                            float: right;
+                            margin-bottom: 20px;
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 50px;
+                        }
+
+
+                       
+                        i
+                        {
+                            color: $c-mgray;
+                            margin-left: 15px;
+                        }
+                        input
+                        {
+                            height: 60px;
+                            margin-right: 30px;
+                            font-size:  $md-sm-fontsize;
+                            font-family: $en-font;
+                            color: $c-mgray;
+                            font-size: $sm-fontsize;
+                            @media screen and (max-width: $tablet)
+                            {
+                                height: 50px;
+                            }
+
+                        }
+
+                        a
+                        {
+                            img
+                            {
+                                width: auto;
+                                float: left;
+                                padding: 24px;
+                            }
+                        }
+                     
+                }
+                
+                
+                img
+                {
+                    position: absolute;
+                    bottom: 24px; 
+                    width: auto;
+                    @media screen and (max-width: $tablet)
+                    {
+                        bottom: -40px;
+                    }
+                }
+                
+                form
+                    {
+                        display: block;
+                        float: left;
+                        margin-top: 15px;
+                        overflow: hidden;
+                        border-radius: 60px;
+                        background-color: $c-white;
+                        padding-right: 30px;
+                        padding-left: 0px;
+                        width: 100%;
+                        height: 60px;
+                        @media screen and (max-width: $tablet)
+                        {
+                            float: right;
+                            margin-bottom: 20px;
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 50px;
+                        }
+
+
+                        .text
+                        {
+                            direction: rtl;
+                            padding-right: 20px;
+                            position: relative;
+                            font-size: $md-sm-fontsize;
+                            color: $c-mgray;
+                            @media screen and (max-width: $tablet)
+                            {
+                                font-size: $sm-fontsize;
+                                height: 40px;
+                            }
+                        }
+                        i
+                        {
+                            color: $c-mgray;
+                            margin-left: 15px;
+                        }
+                        input
+                        {
+                            height: 60px;
+                            margin-right: 30px;
+                            font-family: $en-font;
+                            @media screen and (max-width: $tablet)
+                            {
+                                height: 50px;
+                            }
+
+                        }
+
+                        a
+                        {
+                            img
+                            {
+                                width: auto;
+                                float: left;
+                                padding: 24px;
+                            }
+                        }
+                    
+                }
+                
+            }
+    
+    }
+    .booking-btn
+    {
+        a
+        {
+            background-color: #b24c9b;
+            &:hover{
+                background-color: #a6378d;
+            }
+        }
+        
+    }
+}
+/** End Hotel Booking **/
+
+/** Start Car booking **/
+.car-book
+{
+    .data
+    {
+        float: left;
+        padding: 0px;
+        .title
+        {
+            display: block;
+            float: right;
+            span
+            {
+                margin-top: $md-whitespace;
+                display: block;
+            }
+            
+        }
+        .select
+        {
+            float: left;
+            padding-right: 0px;
+            padding: 0px;
+        }
+    }
+    .car-book-btn
+    {
+        a
+        {
+            background-color: #468694;
+            &:hover{
+                background-color: #296c7b;
+            }
+        }
+    }
+}
+
+
+/** End Car booking **/
+
+
+/** Start product compare **/
+
+.compare-slide
+{
+    .input-text
+    {
+        margin-bottom: 133px;
+        @media screen and (max-width: $tablet)
+        {
+            
+            
+        }
+        
+        form
+        {
+            display: block;
+            margin-top: 15px;
+            overflow: hidden;
+            border-radius: 60px;
+            background-color: $c-white;
+            padding-right: 30px;
+            padding-left: 0px;
+            margin: 0 auto; 
+            width:515px;
+            height: 60px;
+            i
+            {
+                float: left;
+                padding: 25px;
+            }
+            input
+            {
+                float: right;
+                line-height: 2.7;
+            }
+            @media screen and (max-width: $tablet)
+            {
+                float: right;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                width: 100%;
+                height: 50px;
+            }
+        }
+    }
+ 
+
+}
+/** End product copmare **/
+
+
